@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: SE_BS_VendorProject
+  gitServerName: SE_BS_Git
+  gitUrl: https://github.com/BjornSkanberg1
+  gitUsername: BjornSkanberg1
+  gitBranch: main
