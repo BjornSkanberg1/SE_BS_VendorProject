@@ -7,3 +7,62 @@ packages:
   gitUrl: https://github.com/BjornSkanberg1
   gitUsername: BjornSkanberg1
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_BS_k8sMysql
+  packages:
+  - name: SE_BS_VendorProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.serverName
+  : mysql-service.storage.svc.cluster.local
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionEnabled
+  : "false"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.driverType
+  : mysql
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.password
+  : "{AES}AsegY28Coi/S17V4BYq2Cw=="
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.keyStore
+  : ""
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.user
+  : crunchops
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.databaseName
+  : petclinic
+  ? artConnection.SE_BS_VendorProject.project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_BS_k8sMysql.connectionSettings.trustStore
+  : ""
