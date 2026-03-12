@@ -148,7 +148,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Bjoern.Skanberg@ibm.com</value>
-    <value name="lastModifiedDate">1773306088124</value>
+    <value name="lastModifiedDate">1773306321909</value>
     <value name="displayName">createVendor</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -285,6 +285,8 @@
         <number name="lineNumberForDebug" type="Long">3</number>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2</value>
       </record>
     </record>
   </record>
