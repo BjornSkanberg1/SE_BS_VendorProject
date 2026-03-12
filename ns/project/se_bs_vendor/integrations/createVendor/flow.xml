@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.se_bs_vendor.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:createVendor" VALIDATE-IN="" VALIDATE-OUT="">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/orgnr;1;0" TO="/createVendorInput;2;0/OrganisationsNummer;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/kategori;1;0" TO="/createVendorInput;2;0/Kategori;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/kontaktNamn;1;0" TO="/createVendorInput;2;0/KontaktNamn;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/kontaktTelefon;1;0" TO="/createVendorInput;2;0/KontaktMail;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/kontaktEmail;1;0" TO="/createVendorInput;2;0/KontaktTelefonnummer;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/timestamp;1;0" TO="/createVendorInput;2;0/created_at;3;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/timestamp;1;0" TO="/createVendorInput;2;0/updated_at;3;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPDELETE FIELD="/orgnr;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/kategori;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/kontaktNamn;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/kontaktTelefon;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/kontaktEmail;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/timestamp;1;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+</FLOW>
